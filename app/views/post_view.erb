@@ -1,0 +1,8 @@
+<div class="container">
+  <h1>posts of <%=@cat%></h1>
+  <a href='/new'>Create a new post</a>
+  <%@posts.each do |post|%>
+    <h3><%=post.title%></h3>
+    <p><%=post.content%></p>
+  <%end%>
+</div>

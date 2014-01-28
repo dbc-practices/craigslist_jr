@@ -1,0 +1,13 @@
+<h1>New Post</h1>
+<form action="/new_post" method="post">
+  <input type="text" name="title">
+  <select name='category'>
+    <% Category.all.each do |cat| %>
+    <option><%=cat.name%></option>
+    <%end%>
+  </select>
+  </br>
+  <textarea name = "content" cols=50 rows=4></textarea>
+  </br>
+  <input type="submit" value="Submit">
+</form>

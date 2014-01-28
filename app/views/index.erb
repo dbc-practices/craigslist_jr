@@ -1,0 +1,7 @@
+<div class="container">
+  <h1>All Categories</h1>
+  <a href='/new'>Create a new post</a>
+  <% Category.all.each do |cat| %>
+  <a href="/<%=cat.name%>"><%=cat.name%></a>
+  <%end%>
+</div>
